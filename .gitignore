@@ -1,0 +1,50 @@
+# === Secrets and credentials — NEVER commit ===
+.env
+*.key
+*.pem
+*.p12
+
+# === Python ===
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# === Data files — raw data is large and may contain PII ===
+data/raw/*.xlsx
+data/raw/*.csv
+data/raw/*.xls
+# Processed data and rejected records
+data/processed/*.parquet
+data/rejected/*.csv
+
+# === Logs ===
+logs/*.log
+logs/*.jsonl
+
+# === IDE ===
+.vscode/settings.json
+.idea/
+*.swp
+*.swo
+*~
+
+# === OS ===
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# === Node (if any tooling added) ===
+node_modules/
